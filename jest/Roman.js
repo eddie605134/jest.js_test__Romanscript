@@ -58,7 +58,7 @@ export const RomanInput = (signString) => {
   const StringToSign = signString.split(/[\s\n]/).filter(it=> it != "").slice(0,2)
   const [sign1, sign2] = StringToSign
 
-  let abs = getAbs(sign1, sign2)
+  let abs = getDifferenceAbs(sign1, sign2)
   let finalResult = numberToSign(abs); 
   console.log(finalResult);
   return finalResult
@@ -128,7 +128,7 @@ export function calculation (num, digit) {
   }
 }
 
-export function getAbs (sign1, sign2) {
+export function getDifferenceAbs (sign1, sign2) {
   let total1 = signToNum(sign1)
   let total2 = signToNum(sign2)
   return Math.abs(total1 - total2)

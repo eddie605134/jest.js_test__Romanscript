@@ -1,6 +1,6 @@
 import {sum, subtract, bankAccount} from '../sum'
 
-test('adds 1 + 2 to equal 3', () => { // 第一個參數是標題
+test('adds 1  + 2 to equal 3', () => { // 第一個參數是標題
   expect(sum(1, 2)).toBe(3);
 });
 
